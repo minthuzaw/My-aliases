@@ -22,20 +22,30 @@ alias gc="git commit -m "
 ```
 
 # git set upstream
-alias gp="git push "
+```
+alias gp="git push"
+```
 
 # git reset
+```
 alias nah="git reset --xhard &6 git clean -df"
+```
 
 # git get remote url name
+```
 alias grn="git remote get-url origin"
+```
 
 # git set url name
+```
 alias gsu="git remote set-url origin"
+```
 
 # Go to git repo alias
+```
 function openPjGitHubRepo() {
   gitUrl=$(git config --get remote.origin.url)
   open $gitUrl
 }
 alias gh="openPjGitHubRepo"
+```
